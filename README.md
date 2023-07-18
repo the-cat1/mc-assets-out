@@ -5,20 +5,22 @@
 
 ## 使用方法
 ### Step 0
-当然你得先有Minecraft Java版的启动器，并且下载了至少一个版本。
+当然你得先有Minecraft Java版的启动器，并且下载了**至少一个版本**。
 
 ### Step 1
 找个地方克隆此库。
 
 ```bash
-git clone https://github.com/the-cat1/mc-assets-out
+git clone https://github.com/the-cat1/mc-assets-out.git
 ```
 
+或[下载可执行文件](https://github.com/the-cat1/mc-assets-out/releases)。
+
 ### Step 2
-复制 `.minecraft` 下的 `assets` 文件夹到根目录下（即 `mc-assets-out.py` 文件的旁边）。
+复制 `.minecraft` 下的 `assets` 文件夹到根目录下（即 `mc-assets-out` 文件的旁边）。
 
 ### Step 3
-启动 `mc-assets-out.py` 并选择版本(举例 `1.8`)，然后静静等待。
+启动 `mc-assets-out` 并选择版本(举例 `1.8`)，然后静静等待。
 
 ```
 ========== Assets Out ==========
