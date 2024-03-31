@@ -1,11 +1,11 @@
 # mc-assets-out
-> 不知道你们有没有和我一样的疑惑，Mc的音效放在哪里？以前找了半天也找不着。
+> 不知道你们有没有和我一样的疑惑，Mc的音效放在哪里？以前找了半天也找不着。实际上，它并不和贴图资源一样在 .jar 文件中，使用这个工具可以提取出这些资源文件。
 
 今天发现Mc的音效都是在assets文件夹里，但是名字都是hash值。简单写了个能提取 `.minecraft/assets` 中的资源文件的程序。
 
 ## 使用方法
 ### Step 0
-当然你得先有Minecraft Java版的启动器，并且下载了**至少一个版本**。
+当然你得先有Minecraft Java版的启动器，并且下载了 **至少一个版本** 。
 
 ### Step 1
 找个地方克隆此库。
@@ -17,7 +17,7 @@ git clone https://github.com/the-cat1/mc-assets-out.git
 或[下载可执行文件](https://github.com/the-cat1/mc-assets-out/releases)。
 
 ### Step 2
-复制 `.minecraft` 下的 `assets` 文件夹到根目录下（即 `mc-assets-out` 文件的旁边）。
+把 `mc-assets-out.py` 文件复制到 `.minecraft` 目录下或复制 `.minecraft` 下的 `assets` 文件夹到根目录下（即 `mc-assets-out.py` 文件的旁边）。
 
 ### Step 3
 启动 `mc-assets-out` 并选择版本(举例 `1.8`)，然后静静等待。
@@ -80,7 +80,7 @@ mc-assets-out
 ```
 
 ### Step ∞
-如果不用了可以在选择版本那里输 `clean` 。
+如果不用了可以在选择版本那里输 `clean` 来删除输出的文件 。
 
 ## 原理
 开头说了，其实资源文件都放在 `objects` 里，只不过名字变成hash值了。所以只要找到一个映射表，把文件名和hash值一一对应，我们只要改名字就行了。
@@ -135,4 +135,4 @@ objects
     \- ...
 ```
 
-所以，改名字就很简单了，一个下午就整出来了，空行加起来也不够100行。
+所以，实现起来很简单，空行加起来也不够100行。
